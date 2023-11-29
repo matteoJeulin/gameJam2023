@@ -1,0 +1,6 @@
+<<<<<<< HEAD
+ijy
+=======
+Coucou, c'est un test
+Et un autre
+>>>>>>> 1ac5edc76066ce83f546e13b0f99a05fe97dd2fe
