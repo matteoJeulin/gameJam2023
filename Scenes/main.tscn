@@ -28,7 +28,9 @@ z_index = -1
 position = Vector2(446, 729)
 
 [node name="Arrow_Left" parent="." instance=ExtResource("5_q8lcd")]
+z_index = -1
 position = Vector2(114, 460)
 
 [node name="Arrow_Right" parent="." instance=ExtResource("6_27o5n")]
+z_index = -1
 position = Vector2(646, 461)
