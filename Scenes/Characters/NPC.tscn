@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://s51h0dfc65kl"]
+
+[ext_resource type="Script" path="res://Scripts/Character/NPC.gd" id="1_k0xuv"]
+[ext_resource type="Texture2D" uid="uid://ctb7lkef3a386" path="res://assets/sprites/player_down.png" id="1_luex1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lypws"]
+size = Vector2(98, 78)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wt2fo"]
+radius = 81.0
+height = 232.0
+
+[node name="NPC" type="CharacterBody2D"]
+script = ExtResource("1_k0xuv")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+scale = Vector2(3, 3)
+texture = ExtResource("1_luex1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, 64)
+shape = SubResource("RectangleShape2D_lypws")
+
+[node name="dialogue" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dialogue"]
+shape = SubResource("CapsuleShape2D_wt2fo")
+
+[node name="Texte" type="Label" parent="."]
+offset_left = -123.0
+offset_top = -141.0
+offset_right = 125.0
+offset_bottom = -118.0
+text = "Ceci est un exemple de dialogue"
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
+[connection signal="body_entered" from="dialogue" to="." method="_on_dialogue_body_entered"]
+[connection signal="body_exited" from="dialogue" to="." method="_on_dialogue_body_exited"]
