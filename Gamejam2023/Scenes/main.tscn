@@ -1,0 +1,55 @@
+[gd_scene load_steps=9 format=3 uid="uid://bug34b24kytis"]
+
+[ext_resource type="PackedScene" uid="uid://cedasj6m778up" path="res://Scenes/Characters/player.tscn" id="1_i66x2"]
+[ext_resource type="Script" path="res://Scripts/main.gd" id="1_jeu80"]
+[ext_resource type="Texture2D" uid="uid://mmo7cjno2myn" path="res://icon.svg" id="2_xol31"]
+[ext_resource type="PackedScene" uid="uid://b2npn1ggrgtyd" path="res://Scenes/Arrows/arrow_up.tscn" id="3_ik31v"]
+[ext_resource type="PackedScene" uid="uid://0cfrr54k8kym" path="res://Scenes/Arrows/arrow_down.tscn" id="4_tx58o"]
+[ext_resource type="PackedScene" uid="uid://imwc1y5t36yw" path="res://Scenes/Arrows/arrow_left.tscn" id="5_q8lcd"]
+[ext_resource type="PackedScene" uid="uid://dg7chnxeq1mtr" path="res://Scenes/Arrows/arrow_right.tscn" id="6_27o5n"]
+
+[sub_resource type="GDScript" id="GDScript_4ydu5"]
+script/source = "extends MenuButton
+"
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_jeu80")
+
+[node name="Player" parent="." instance=ExtResource("1_i66x2")]
+position = Vector2(283, 364)
+
+[node name="Icon" type="Sprite2D" parent="."]
+z_index = -2
+position = Vector2(456, 442)
+scale = Vector2(13.6563, 9.13281)
+texture = ExtResource("2_xol31")
+metadata/_edit_lock_ = true
+
+[node name="ArrowUp" parent="." instance=ExtResource("3_ik31v")]
+z_index = -1
+position = Vector2(441, 212)
+
+[node name="Arrow_Down" parent="." instance=ExtResource("4_tx58o")]
+z_index = -1
+position = Vector2(446, 729)
+
+[node name="Arrow_Left" parent="." instance=ExtResource("5_q8lcd")]
+z_index = -1
+position = Vector2(114, 460)
+
+[node name="Arrow_Right" parent="." instance=ExtResource("6_27o5n")]
+z_index = -1
+position = Vector2(646, 461)
+
+[node name="Pause" type="MenuButton" parent="."]
+offset_left = 1017.0
+offset_top = -56.0
+offset_right = 1166.0
+offset_bottom = 4.0
+text = "Pause"
+script = SubResource("GDScript_4ydu5")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[connection signal="pressed" from="Pause" to="." method="_on_pause_pressed"]
+[connection signal="pressed" from="Pause" to="." method="_on_option_pressed"]
