@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://bug34b24kytis"]
+[gd_scene load_steps=9 format=3 uid="uid://bug34b24kytis"]
 
 [ext_resource type="PackedScene" uid="uid://cedasj6m778up" path="res://Scenes/Characters/player.tscn" id="1_i66x2"]
+[ext_resource type="Script" path="res://Scripts/main.gd" id="1_nahc7"]
 [ext_resource type="PackedScene" uid="uid://b2npn1ggrgtyd" path="res://Scenes/Arrows/arrow_up.tscn" id="3_ik31v"]
 [ext_resource type="PackedScene" uid="uid://0cfrr54k8kym" path="res://Scenes/Arrows/arrow_down.tscn" id="4_tx58o"]
 [ext_resource type="PackedScene" uid="uid://imwc1y5t36yw" path="res://Scenes/Arrows/arrow_left.tscn" id="5_q8lcd"]
@@ -10,6 +11,7 @@
 
 [node name="Main" type="Node2D"]
 y_sort_enabled = true
+script = ExtResource("1_nahc7")
 
 [node name="Player" parent="." instance=ExtResource("1_i66x2")]
 z_index = 1
@@ -37,3 +39,12 @@ position = Vector2(-99, 155)
 
 [node name="Arrow_TP" parent="." instance=ExtResource("8_8yx3s")]
 position = Vector2(1008, 204)
+
+[node name="Pause" type="Button" parent="."]
+offset_left = 1024.0
+offset_top = 1.0
+offset_right = 1151.0
+offset_bottom = 51.0
+text = "Pause"
+
+[connection signal="pressed" from="Pause" to="." method="_on_pause_pressed"]

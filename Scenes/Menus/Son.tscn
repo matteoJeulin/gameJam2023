@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://dru3p37g3oku1"]
+
+[ext_resource type="Script" path="res://Scripts/Menus/Son.gd" id="1_edmod"]
+
+[node name="Son" type="Node2D"]
+script = ExtResource("1_edmod")
+
+[node name="Retour" type="Button" parent="."]
+offset_right = 199.0
+offset_bottom = 78.0
+text = "Retour"
+
+[connection signal="pressed" from="Retour" to="." method="_on_retour_pressed"]

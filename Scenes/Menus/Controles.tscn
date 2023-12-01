@@ -1,0 +1,117 @@
+[gd_scene load_steps=2 format=3 uid="uid://b65066fdcd4jn"]
+
+[ext_resource type="Script" path="res://Scripts/Menus/Controles.gd" id="1_6swyr"]
+
+[node name="Controles" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_6swyr")
+
+[node name="TextEdit" type="RichTextLabel" parent="."]
+offset_left = 167.0
+offset_top = 57.0
+offset_right = 305.0
+offset_bottom = 128.0
+text = "Up"
+
+[node name="TextEdit2" type="RichTextLabel" parent="."]
+offset_left = 167.0
+offset_top = 137.0
+offset_right = 305.0
+offset_bottom = 208.0
+text = "Down"
+
+[node name="TextEdit3" type="RichTextLabel" parent="."]
+offset_left = 167.0
+offset_top = 217.0
+offset_right = 305.0
+offset_bottom = 288.0
+text = "Left"
+
+[node name="TextEdit4" type="RichTextLabel" parent="."]
+offset_left = 167.0
+offset_top = 297.0
+offset_right = 305.0
+offset_bottom = 368.0
+text = "Right"
+
+[node name="TextEdit5" type="RichTextLabel" parent="."]
+offset_left = 167.0
+offset_top = 377.0
+offset_right = 305.0
+offset_bottom = 448.0
+text = "Action"
+
+[node name="up" type="Button" parent="."]
+offset_left = 322.0
+offset_top = 57.0
+offset_right = 463.0
+offset_bottom = 129.0
+
+[node name="down" type="Button" parent="."]
+offset_left = 322.0
+offset_top = 137.0
+offset_right = 463.0
+offset_bottom = 209.0
+
+[node name="left" type="Button" parent="."]
+offset_left = 322.0
+offset_top = 217.0
+offset_right = 463.0
+offset_bottom = 289.0
+
+[node name="right" type="Button" parent="."]
+offset_left = 322.0
+offset_top = 297.0
+offset_right = 463.0
+offset_bottom = 369.0
+
+[node name="action" type="Button" parent="."]
+offset_left = 322.0
+offset_top = 377.0
+offset_right = 463.0
+offset_bottom = 449.0
+
+[node name="Retour" type="Button" parent="."]
+offset_left = 409.0
+offset_top = 506.0
+offset_right = 605.0
+offset_bottom = 578.0
+text = "Retour"
+
+[node name="Label_up" type="Label" parent="."]
+offset_left = 321.0
+offset_top = 56.0
+offset_right = 464.0
+offset_bottom = 130.0
+
+[node name="Label_down" type="Label" parent="."]
+offset_left = 320.0
+offset_top = 137.0
+offset_right = 463.0
+offset_bottom = 211.0
+
+[node name="Label_left" type="Label" parent="."]
+offset_left = 320.0
+offset_top = 217.0
+offset_right = 463.0
+offset_bottom = 291.0
+
+[node name="Label_right" type="Label" parent="."]
+offset_left = 321.0
+offset_top = 298.0
+offset_right = 464.0
+offset_bottom = 372.0
+
+[node name="Label_action" type="Label" parent="."]
+offset_left = 321.0
+offset_top = 376.0
+offset_right = 464.0
+offset_bottom = 450.0
+
+[connection signal="pressed" from="up" to="." method="_on_bind_up_pressed"]
+[connection signal="pressed" from="down" to="." method="_on_bind_down_pressed"]
+[connection signal="pressed" from="left" to="." method="_on_bind_left_pressed"]
+[connection signal="pressed" from="right" to="." method="_on_bind_right_pressed"]
+[connection signal="pressed" from="action" to="." method="_on_bind_interaction_pressed"]
+[connection signal="pressed" from="Retour" to="." method="_on_retour_pressed"]
