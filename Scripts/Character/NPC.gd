@@ -5,7 +5,7 @@ var is_text_shown = false
 func _ready() :
 	$Texte.hide()
 
-func _process(delta) :
+func _process(_delta) :
 	dialogue()
 	#print(is_body_in)
 

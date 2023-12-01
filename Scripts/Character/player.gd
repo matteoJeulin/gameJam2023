@@ -27,3 +27,7 @@ func player_movement(delta) :
 		velocity = Vector2.ZERO
 	move_and_slide()
 
+
+
+func _on_pause_pressed():
+	get_tree().change_scene_to_file("res://Scenes/Menus/Pause.tscn")

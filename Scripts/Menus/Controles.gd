@@ -2,6 +2,7 @@ extends Control
 
 var current_button : Button
 
+@onready var Retour : Button = $Retour
 @onready var Bind_Up : Button = $up
 @onready var Bind_Down : Button = $down
 @onready var Bind_Left : Button = $left
@@ -25,11 +26,8 @@ func _ready():
 	
 # Whenerver a button is pressed, do:
 func _on_button_pressed(button: Button):
-	current_button = button # assign clicked button to current_button
-
-
-func _on_bind_up_pressed(button: Button):
-	current_button = button
+	if button != Retour:
+		current_button = button # assign clicked button to current_button
 	
 	
 func _input(event: InputEvent):
@@ -94,13 +92,6 @@ func _update_labels():
 		label_action.text = ""
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
-
-
 func _on_retour_pressed():
 	get_tree().change_scene_to_file("res://Scenes/Menus/Options.tscn")
-
 

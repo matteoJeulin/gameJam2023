@@ -109,9 +109,9 @@ offset_top = 376.0
 offset_right = 464.0
 offset_bottom = 450.0
 
-[connection signal="pressed" from="up" to="." method="_on_bind_up_pressed"]
-[connection signal="pressed" from="down" to="." method="_on_bind_down_pressed"]
-[connection signal="pressed" from="left" to="." method="_on_bind_left_pressed"]
-[connection signal="pressed" from="right" to="." method="_on_bind_right_pressed"]
-[connection signal="pressed" from="action" to="." method="_on_bind_interaction_pressed"]
+[connection signal="pressed" from="up" to="." method="_on_up_pressed"]
+[connection signal="pressed" from="down" to="." method="_on_down_pressed"]
+[connection signal="pressed" from="left" to="." method="_on_left_pressed"]
+[connection signal="pressed" from="right" to="." method="_on_right_pressed"]
+[connection signal="pressed" from="action" to="." method="_on_action_pressed"]
 [connection signal="pressed" from="Retour" to="." method="_on_retour_pressed"]
