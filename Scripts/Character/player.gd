@@ -10,12 +10,12 @@ func player_movement(delta) :
 	#print(_on_body_entered(body))
 	if Input.is_action_pressed("right") :
 		global_position.x += 10
-		$Sprite.texture=load("res://assets/Sprites/player_right.png")
+		$Sprite.texture=load("res://assets/sprites/player_right.png")
 	if Input.is_action_pressed("left") :
 		global_position.x -= 10
-		$Sprite.texture=load("res://assets/Sprites/player_left.png")
+		$Sprite.texture=load("res://assets/sprites/player_left.png")
 	if Input.is_action_pressed("up") :
-		$Sprite.texture=load("res://assets/Sprites/player_up.png")
+		$Sprite.texture=load("res://assets/sprites/player_up.png")
 		global_position.y -= 10
 	if Input.is_action_pressed("down") :
 		$Sprite.texture=load("res://assets/sprites/player_down.png")
