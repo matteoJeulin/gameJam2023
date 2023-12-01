@@ -2,7 +2,9 @@
 
 [ext_resource type="Script" path="res://Scripts/Menus/Controles.gd" id="1_6swyr"]
 
-[node name="Controles" type="Node2D"]
+[node name="Controles" type="Control"]
+layout_mode = 3
+anchors_preset = 0
 script = ExtResource("1_6swyr")
 
 [node name="TextEdit" type="RichTextLabel" parent="."]
@@ -38,33 +40,33 @@ offset_left = 167.0
 offset_top = 377.0
 offset_right = 305.0
 offset_bottom = 448.0
-text = "Interaction"
+text = "Action"
 
-[node name="Bind_Up" type="Button" parent="."]
+[node name="up" type="Button" parent="."]
 offset_left = 322.0
 offset_top = 57.0
 offset_right = 463.0
 offset_bottom = 129.0
 
-[node name="Bind_Down" type="Button" parent="."]
+[node name="down" type="Button" parent="."]
 offset_left = 322.0
 offset_top = 137.0
 offset_right = 463.0
 offset_bottom = 209.0
 
-[node name="Bind_Left" type="Button" parent="."]
+[node name="left" type="Button" parent="."]
 offset_left = 322.0
 offset_top = 217.0
 offset_right = 463.0
 offset_bottom = 289.0
 
-[node name="Bind_Right" type="Button" parent="."]
+[node name="right" type="Button" parent="."]
 offset_left = 322.0
 offset_top = 297.0
 offset_right = 463.0
 offset_bottom = 369.0
 
-[node name="Bind_Interaction" type="Button" parent="."]
+[node name="action" type="Button" parent="."]
 offset_left = 322.0
 offset_top = 377.0
 offset_right = 463.0
@@ -77,9 +79,39 @@ offset_right = 605.0
 offset_bottom = 578.0
 text = "Retour"
 
-[connection signal="pressed" from="Bind_Up" to="." method="_on_bind_up_pressed"]
-[connection signal="pressed" from="Bind_Down" to="." method="_on_bind_down_pressed"]
-[connection signal="pressed" from="Bind_Left" to="." method="_on_bind_left_pressed"]
-[connection signal="pressed" from="Bind_Right" to="." method="_on_bind_right_pressed"]
-[connection signal="pressed" from="Bind_Interaction" to="." method="_on_bind_interaction_pressed"]
+[node name="Label_up" type="Label" parent="."]
+offset_left = 321.0
+offset_top = 56.0
+offset_right = 464.0
+offset_bottom = 130.0
+
+[node name="Label_down" type="Label" parent="."]
+offset_left = 320.0
+offset_top = 137.0
+offset_right = 463.0
+offset_bottom = 211.0
+
+[node name="Label_left" type="Label" parent="."]
+offset_left = 320.0
+offset_top = 217.0
+offset_right = 463.0
+offset_bottom = 291.0
+
+[node name="Label_right" type="Label" parent="."]
+offset_left = 321.0
+offset_top = 298.0
+offset_right = 464.0
+offset_bottom = 372.0
+
+[node name="Label_action" type="Label" parent="."]
+offset_left = 321.0
+offset_top = 376.0
+offset_right = 464.0
+offset_bottom = 450.0
+
+[connection signal="pressed" from="up" to="." method="_on_up_pressed"]
+[connection signal="pressed" from="down" to="." method="_on_down_pressed"]
+[connection signal="pressed" from="left" to="." method="_on_left_pressed"]
+[connection signal="pressed" from="right" to="." method="_on_right_pressed"]
+[connection signal="pressed" from="action" to="." method="_on_action_pressed"]
 [connection signal="pressed" from="Retour" to="." method="_on_retour_pressed"]
