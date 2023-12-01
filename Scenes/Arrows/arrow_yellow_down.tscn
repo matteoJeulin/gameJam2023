@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://crghqojoyp4n4"]
+
+[ext_resource type="Script" path="res://Scripts/Arrows/Arrow_Yellow_Down.gd" id="1_jffqn"]
+[ext_resource type="Texture2D" uid="uid://djkajyiithvo0" path="res://assets/sprites/arrows/arrow_down_yellow_1.png" id="2_smp5u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3b6pe"]
+size = Vector2(48, 34)
+
+[node name="Arrow_Yellow_Down" type="Area2D"]
+script = ExtResource("1_jffqn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(3, 3)
+texture = ExtResource("2_smp5u")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_3b6pe")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
