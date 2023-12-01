@@ -13,11 +13,11 @@ func _process(delta) :
 
 func dialogue() :
 	if is_body_in == true :
-		if Input.is_key_pressed(KEY_E) and is_text_shown == false :
+		if Input.is_action_just_pressed("action") and is_text_shown == false :
 			is_text_shown = true
 			$Texte.show()
 			print("aaa")
-		if Input.is_key_pressed(KEY_A) and is_text_shown == true :
+		elif Input.is_action_just_pressed("action") and is_text_shown == true :
 			is_text_shown = false
 			$Texte.hide()
 			print("bbb")
