@@ -2,10 +2,10 @@
 
 [ext_resource type="PackedScene" uid="uid://cedasj6m778up" path="res://Scenes/Characters/player.tscn" id="1_i66x2"]
 [ext_resource type="Script" path="res://Scripts/main.gd" id="1_nahc7"]
-[ext_resource type="PackedScene" uid="uid://b2npn1ggrgtyd" path="res://Scenes/Arrows/arrow_up.tscn" id="3_ik31v"]
-[ext_resource type="PackedScene" uid="uid://0cfrr54k8kym" path="res://Scenes/Arrows/arrow_down.tscn" id="4_tx58o"]
-[ext_resource type="PackedScene" uid="uid://imwc1y5t36yw" path="res://Scenes/Arrows/arrow_left.tscn" id="5_q8lcd"]
-[ext_resource type="PackedScene" uid="uid://dg7chnxeq1mtr" path="res://Scenes/Arrows/arrow_right.tscn" id="6_27o5n"]
+[ext_resource type="PackedScene" uid="uid://lm83ys14qsfi" path="res://Scenes/Arrows/arrow_red_up.tscn" id="3_ik31v"]
+[ext_resource type="PackedScene" uid="uid://lpjjmh464eur" path="res://Scenes/Arrows/arrow_red_down.tscn" id="4_tx58o"]
+[ext_resource type="PackedScene" uid="uid://cfiudjj01ig7e" path="res://Scenes/Arrows/arrow_red_left.tscn" id="5_q8lcd"]
+[ext_resource type="PackedScene" uid="uid://di4nbb03jmg8w" path="res://Scenes/Arrows/arrow_red_right.tscn" id="6_27o5n"]
 [ext_resource type="PackedScene" uid="uid://s51h0dfc65kl" path="res://Scenes/Characters/NPC.tscn" id="7_d7gbq"]
 [ext_resource type="PackedScene" uid="uid://cu043tctwjj0c" path="res://Scenes/Arrows/arrow_tp.tscn" id="8_8yx3s"]
 

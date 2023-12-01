@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://s185xtnx0xmr"]
+
+[node name="Niveau1" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 401.0
+offset_top = 192.0
+offset_right = 874.0
+offset_bottom = 324.0
+text = "Ca marche"
