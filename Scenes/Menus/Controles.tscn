@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://b65066fdcd4jn"]
+[gd_scene load_steps=3 format=3 uid="uid://b65066fdcd4jn"]
 
 [ext_resource type="Script" path="res://Scripts/Menus/Controles.gd" id="1_6swyr"]
+[ext_resource type="PackedScene" uid="uid://0yeadoaxp15h" path="res://Scenes/Menus/backgroud.tscn" id="2_lj23f"]
 
 [node name="Controles" type="Control"]
 layout_mode = 3
@@ -9,167 +10,170 @@ script = ExtResource("1_6swyr")
 
 [node name="TextEdit" type="Label" parent="."]
 layout_mode = 0
-offset_left = 167.0
-offset_top = 57.0
-offset_right = 305.0
-offset_bottom = 128.0
+offset_left = 586.0
+offset_top = 326.0
+offset_right = 724.0
+offset_bottom = 397.0
 text = "Up"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="TextEdit6" type="Label" parent="."]
 layout_mode = 0
-offset_left = 569.0
-offset_top = 56.0
-offset_right = 707.0
-offset_bottom = 127.0
+offset_left = 988.0
+offset_top = 325.0
+offset_right = 1126.0
+offset_bottom = 396.0
 text = "Restart"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="TextEdit2" type="Label" parent="."]
 layout_mode = 0
-offset_left = 167.0
-offset_top = 137.0
-offset_right = 305.0
-offset_bottom = 208.0
+offset_left = 586.0
+offset_top = 406.0
+offset_right = 724.0
+offset_bottom = 477.0
 text = "Down"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="TextEdit3" type="Label" parent="."]
 layout_mode = 0
-offset_left = 167.0
-offset_top = 217.0
-offset_right = 305.0
-offset_bottom = 288.0
+offset_left = 586.0
+offset_top = 486.0
+offset_right = 724.0
+offset_bottom = 557.0
 text = "Left"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="TextEdit4" type="Label" parent="."]
 layout_mode = 0
-offset_left = 167.0
-offset_top = 297.0
-offset_right = 305.0
-offset_bottom = 368.0
+offset_left = 586.0
+offset_top = 566.0
+offset_right = 724.0
+offset_bottom = 637.0
 text = "Right"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="TextEdit5" type="Label" parent="."]
 layout_mode = 0
-offset_left = 167.0
-offset_top = 377.0
-offset_right = 305.0
-offset_bottom = 448.0
+offset_left = 586.0
+offset_top = 646.0
+offset_right = 724.0
+offset_bottom = 717.0
 text = "Action"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="up" type="Button" parent="."]
 layout_mode = 0
-offset_left = 322.0
-offset_top = 57.0
-offset_right = 463.0
-offset_bottom = 129.0
+offset_left = 741.0
+offset_top = 326.0
+offset_right = 882.0
+offset_bottom = 398.0
 
 [node name="down" type="Button" parent="."]
 layout_mode = 0
-offset_left = 322.0
-offset_top = 137.0
-offset_right = 463.0
-offset_bottom = 209.0
+offset_left = 741.0
+offset_top = 406.0
+offset_right = 882.0
+offset_bottom = 478.0
 
 [node name="left" type="Button" parent="."]
 layout_mode = 0
-offset_left = 322.0
-offset_top = 217.0
-offset_right = 463.0
-offset_bottom = 289.0
+offset_left = 741.0
+offset_top = 486.0
+offset_right = 882.0
+offset_bottom = 558.0
 
 [node name="right" type="Button" parent="."]
 layout_mode = 0
-offset_left = 322.0
-offset_top = 297.0
-offset_right = 463.0
-offset_bottom = 369.0
+offset_left = 741.0
+offset_top = 566.0
+offset_right = 882.0
+offset_bottom = 638.0
 
 [node name="action" type="Button" parent="."]
 layout_mode = 0
-offset_left = 322.0
-offset_top = 377.0
-offset_right = 463.0
-offset_bottom = 449.0
+offset_left = 741.0
+offset_top = 646.0
+offset_right = 882.0
+offset_bottom = 718.0
 
 [node name="restart" type="Button" parent="."]
 layout_mode = 0
-offset_left = 700.0
-offset_top = 56.0
-offset_right = 841.0
-offset_bottom = 128.0
+offset_left = 1119.0
+offset_top = 325.0
+offset_right = 1260.0
+offset_bottom = 397.0
 
 [node name="Retour" type="Button" parent="."]
 layout_mode = 0
-offset_left = 409.0
-offset_top = 506.0
-offset_right = 605.0
-offset_bottom = 578.0
+offset_left = 828.0
+offset_top = 775.0
+offset_right = 1024.0
+offset_bottom = 847.0
 text = "Retour"
 
 [node name="Label_up" type="Label" parent="."]
 layout_mode = 0
-offset_left = 321.0
-offset_top = 56.0
-offset_right = 464.0
-offset_bottom = 130.0
+offset_left = 740.0
+offset_top = 325.0
+offset_right = 883.0
+offset_bottom = 399.0
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Label_down" type="Label" parent="."]
 layout_mode = 0
-offset_left = 320.0
-offset_top = 137.0
-offset_right = 463.0
-offset_bottom = 211.0
+offset_left = 739.0
+offset_top = 406.0
+offset_right = 882.0
+offset_bottom = 480.0
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Label_left" type="Label" parent="."]
 layout_mode = 0
-offset_left = 320.0
-offset_top = 217.0
-offset_right = 463.0
-offset_bottom = 291.0
+offset_left = 739.0
+offset_top = 486.0
+offset_right = 882.0
+offset_bottom = 560.0
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Label_right" type="Label" parent="."]
 layout_mode = 0
-offset_left = 321.0
-offset_top = 298.0
-offset_right = 464.0
-offset_bottom = 372.0
+offset_left = 740.0
+offset_top = 567.0
+offset_right = 883.0
+offset_bottom = 641.0
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Label_action" type="Label" parent="."]
 layout_mode = 0
-offset_left = 321.0
-offset_top = 378.0
-offset_right = 464.0
-offset_bottom = 452.0
+offset_left = 740.0
+offset_top = 647.0
+offset_right = 883.0
+offset_bottom = 721.0
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Label_restart" type="Label" parent="."]
 layout_mode = 0
-offset_left = 696.0
-offset_top = 52.0
-offset_right = 839.0
-offset_bottom = 126.0
+offset_left = 1115.0
+offset_top = 321.0
+offset_right = 1258.0
+offset_bottom = 395.0
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Backgroud" parent="." instance=ExtResource("2_lj23f")]
+z_index = -1
 
 [connection signal="pressed" from="up" to="." method="_on_up_pressed"]
 [connection signal="pressed" from="down" to="." method="_on_down_pressed"]
