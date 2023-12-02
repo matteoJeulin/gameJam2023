@@ -1,6 +1,10 @@
-[gd_scene format=3 uid="uid://s185xtnx0xmr"]
+[gd_scene load_steps=3 format=3 uid="uid://s185xtnx0xmr"]
+
+[ext_resource type="Script" path="res://Scripts/Niveaux/Niveau1.gd" id="1_t8ghe"]
+[ext_resource type="PackedScene" uid="uid://cedasj6m778up" path="res://Scenes/Characters/player.tscn" id="2_egr84"]
 
 [node name="Niveau1" type="Node2D"]
+script = ExtResource("1_t8ghe")
 
 [node name="Label" type="Label" parent="."]
 offset_left = 401.0
@@ -8,3 +12,11 @@ offset_top = 192.0
 offset_right = 874.0
 offset_bottom = 324.0
 text = "Ca marche"
+
+[node name="Label2" type="Label" parent="."]
+offset_right = 248.0
+offset_bottom = 90.0
+
+[node name="Player" parent="." instance=ExtResource("2_egr84")]
+z_index = 1
+position = Vector2(34, 127)

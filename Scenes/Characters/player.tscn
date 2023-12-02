@@ -37,5 +37,12 @@ offset_bottom = -184.0
 text = "Restart"
 script = ExtResource("3_u2u5q")
 
+[node name="compteur_morts" type="Label" parent="."]
+offset_left = -438.0
+offset_top = -248.0
+offset_right = -288.0
+offset_bottom = -219.0
+text = "Nombre de morts : 0"
+
 [connection signal="pressed" from="Pause" to="." method="_on_pause_pressed"]
 [connection signal="pressed" from="Restart" to="." method="_on_restart_pressed"]

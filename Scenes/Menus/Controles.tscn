@@ -7,45 +7,65 @@ layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_6swyr")
 
-[node name="TextEdit" type="RichTextLabel" parent="."]
+[node name="TextEdit" type="Label" parent="."]
 layout_mode = 0
 offset_left = 167.0
 offset_top = 57.0
 offset_right = 305.0
 offset_bottom = 128.0
 text = "Up"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="TextEdit2" type="RichTextLabel" parent="."]
+[node name="TextEdit6" type="Label" parent="."]
+layout_mode = 0
+offset_left = 569.0
+offset_top = 56.0
+offset_right = 707.0
+offset_bottom = 127.0
+text = "Restart"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextEdit2" type="Label" parent="."]
 layout_mode = 0
 offset_left = 167.0
 offset_top = 137.0
 offset_right = 305.0
 offset_bottom = 208.0
 text = "Down"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="TextEdit3" type="RichTextLabel" parent="."]
+[node name="TextEdit3" type="Label" parent="."]
 layout_mode = 0
 offset_left = 167.0
 offset_top = 217.0
 offset_right = 305.0
 offset_bottom = 288.0
 text = "Left"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="TextEdit4" type="RichTextLabel" parent="."]
+[node name="TextEdit4" type="Label" parent="."]
 layout_mode = 0
 offset_left = 167.0
 offset_top = 297.0
 offset_right = 305.0
 offset_bottom = 368.0
 text = "Right"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="TextEdit5" type="RichTextLabel" parent="."]
+[node name="TextEdit5" type="Label" parent="."]
 layout_mode = 0
 offset_left = 167.0
 offset_top = 377.0
 offset_right = 305.0
 offset_bottom = 448.0
 text = "Action"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="up" type="Button" parent="."]
 layout_mode = 0
@@ -82,6 +102,13 @@ offset_top = 377.0
 offset_right = 463.0
 offset_bottom = 449.0
 
+[node name="restart" type="Button" parent="."]
+layout_mode = 0
+offset_left = 700.0
+offset_top = 56.0
+offset_right = 841.0
+offset_bottom = 128.0
+
 [node name="Retour" type="Button" parent="."]
 layout_mode = 0
 offset_left = 409.0
@@ -96,6 +123,8 @@ offset_left = 321.0
 offset_top = 56.0
 offset_right = 464.0
 offset_bottom = 130.0
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Label_down" type="Label" parent="."]
 layout_mode = 0
@@ -103,6 +132,8 @@ offset_left = 320.0
 offset_top = 137.0
 offset_right = 463.0
 offset_bottom = 211.0
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Label_left" type="Label" parent="."]
 layout_mode = 0
@@ -110,6 +141,8 @@ offset_left = 320.0
 offset_top = 217.0
 offset_right = 463.0
 offset_bottom = 291.0
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Label_right" type="Label" parent="."]
 layout_mode = 0
@@ -117,17 +150,31 @@ offset_left = 321.0
 offset_top = 298.0
 offset_right = 464.0
 offset_bottom = 372.0
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Label_action" type="Label" parent="."]
 layout_mode = 0
 offset_left = 321.0
-offset_top = 376.0
+offset_top = 378.0
 offset_right = 464.0
-offset_bottom = 450.0
+offset_bottom = 452.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label_restart" type="Label" parent="."]
+layout_mode = 0
+offset_left = 696.0
+offset_top = 52.0
+offset_right = 839.0
+offset_bottom = 126.0
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="pressed" from="up" to="." method="_on_up_pressed"]
 [connection signal="pressed" from="down" to="." method="_on_down_pressed"]
 [connection signal="pressed" from="left" to="." method="_on_left_pressed"]
 [connection signal="pressed" from="right" to="." method="_on_right_pressed"]
 [connection signal="pressed" from="action" to="." method="_on_action_pressed"]
+[connection signal="pressed" from="restart" to="." method="_on_action_pressed"]
 [connection signal="pressed" from="Retour" to="." method="_on_retour_pressed"]
