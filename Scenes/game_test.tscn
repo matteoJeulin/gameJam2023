@@ -1,0 +1,114 @@
+[gd_scene load_steps=21 format=3 uid="uid://bb55jlmc6vyl4"]
+
+[ext_resource type="PackedScene" uid="uid://cedasj6m778up" path="res://Scenes/Characters/player.tscn" id="1_sblqm"]
+[ext_resource type="PackedScene" uid="uid://s51h0dfc65kl" path="res://Scenes/Characters/NPC.tscn" id="2_s1da7"]
+[ext_resource type="PackedScene" uid="uid://b7sfiad03e4tw" path="res://Scenes/Arrows/arrow_orange_down.tscn" id="3_8fmg0"]
+[ext_resource type="PackedScene" uid="uid://cj0tr61r0yctl" path="res://Scenes/Arrows/arrow_orange_left.tscn" id="4_igpcj"]
+[ext_resource type="PackedScene" uid="uid://71nhmpo2wn7p" path="res://Scenes/Arrows/arrow_orange_right.tscn" id="5_f05cb"]
+[ext_resource type="PackedScene" uid="uid://6ppakhpenxmx" path="res://Scenes/Arrows/arrow_orange_up.tscn" id="6_rkcdx"]
+[ext_resource type="PackedScene" uid="uid://2foxy4jqmq1w" path="res://Scenes/Arrows/arrow_green_down.tscn" id="8_o83x0"]
+[ext_resource type="PackedScene" uid="uid://lpjjmh464eur" path="res://Scenes/Arrows/arrow_red_down.tscn" id="9_go34q"]
+[ext_resource type="PackedScene" uid="uid://crghqojoyp4n4" path="res://Scenes/Arrows/arrow_yellow_down.tscn" id="10_fist5"]
+[ext_resource type="PackedScene" uid="uid://dk2jlaunl863b" path="res://Scenes/Arrows/arrow_green_left.tscn" id="11_qftu3"]
+[ext_resource type="PackedScene" uid="uid://cfiudjj01ig7e" path="res://Scenes/Arrows/arrow_red_left.tscn" id="12_hgjhj"]
+[ext_resource type="PackedScene" uid="uid://bsx3o564uf7r" path="res://Scenes/Arrows/arrow_yellow_left.tscn" id="13_bit3h"]
+[ext_resource type="PackedScene" uid="uid://trh5eavjbnls" path="res://Scenes/Arrows/arrow_green_right.tscn" id="14_jcf6d"]
+[ext_resource type="PackedScene" uid="uid://di4nbb03jmg8w" path="res://Scenes/Arrows/arrow_red_right.tscn" id="15_vno5c"]
+[ext_resource type="PackedScene" uid="uid://co3af4edo3nsu" path="res://Scenes/Arrows/arrow_yellow_right.tscn" id="16_8u4ng"]
+[ext_resource type="PackedScene" uid="uid://bg778ttbu4y1r" path="res://Scenes/Arrows/arrow_green_up.tscn" id="17_b4f2m"]
+[ext_resource type="PackedScene" uid="uid://lm83ys14qsfi" path="res://Scenes/Arrows/arrow_red_up.tscn" id="18_18no2"]
+[ext_resource type="PackedScene" uid="uid://b27sy2adxgrnw" path="res://Scenes/Arrows/arrow_tp_b.tscn" id="19_pucme"]
+[ext_resource type="PackedScene" uid="uid://b3fl1w42unckm" path="res://Scenes/Arrows/arrow_yellow_up.tscn" id="19_ykf5q"]
+[ext_resource type="PackedScene" uid="uid://ch6a1y1bw17ky" path="res://Scenes/Arrows/arrow_tp_a.tscn" id="20_4fe0b"]
+
+[node name="Game_Test" type="Node2D"]
+y_sort_enabled = true
+
+[node name="Player" parent="." instance=ExtResource("1_sblqm")]
+position = Vector2(56, 144)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_s1da7")]
+y_sort_enabled = true
+position = Vector2(-100, 173)
+
+[node name="Arrow_Orange_Down" parent="." instance=ExtResource("3_8fmg0")]
+z_index = -1
+position = Vector2(-1076, 675)
+
+[node name="Arrow_Orange_Left" parent="." instance=ExtResource("4_igpcj")]
+z_index = -1
+position = Vector2(-1275, 484)
+
+[node name="Arrow_Orange_Right" parent="." instance=ExtResource("5_f05cb")]
+z_index = -1
+position = Vector2(-884, 499)
+
+[node name="Arrow_Orange_Up" parent="." instance=ExtResource("6_rkcdx")]
+z_index = -1
+position = Vector2(-1065, 274)
+
+[node name="Arrow_Green_Down" parent="." instance=ExtResource("8_o83x0")]
+z_index = -1
+position = Vector2(-400, 697)
+
+[node name="Arrow_Red_Down" parent="." instance=ExtResource("9_go34q")]
+z_index = -1
+position = Vector2(506, 655)
+
+[node name="Arrow_Yellow_Down" parent="." instance=ExtResource("10_fist5")]
+z_index = -1
+position = Vector2(1523, 683)
+
+[node name="Arrow_Green_Left" parent="." instance=ExtResource("11_qftu3")]
+z_index = -1
+position = Vector2(-540, 553)
+
+[node name="Arrow_Red_Left" parent="." instance=ExtResource("12_hgjhj")]
+z_index = -1
+position = Vector2(349, 530)
+
+[node name="Arrow_Yellow_Left" parent="." instance=ExtResource("13_bit3h")]
+z_index = -1
+position = Vector2(1318, 553)
+
+[node name="Arrow_Green_Right" parent="." instance=ExtResource("14_jcf6d")]
+z_index = -1
+position = Vector2(-227, 553)
+
+[node name="Arrow_Red_Right" parent="." instance=ExtResource("15_vno5c")]
+z_index = -1
+position = Vector2(654, 529)
+
+[node name="Arrow_Yellow_Right" parent="." instance=ExtResource("16_8u4ng")]
+z_index = -1
+position = Vector2(1688, 546)
+
+[node name="Arrow_Green_Up" parent="." instance=ExtResource("17_b4f2m")]
+z_index = -1
+position = Vector2(-385, 430)
+
+[node name="Arrow_Red_Up" parent="." instance=ExtResource("18_18no2")]
+z_index = -1
+position = Vector2(496, 402)
+
+[node name="Arrow_Yellow_Up" parent="." instance=ExtResource("19_ykf5q")]
+z_index = -1
+position = Vector2(1482, 405)
+
+[node name="Arrow_TP_B" parent="." instance=ExtResource("19_pucme")]
+position = Vector2(914, 116)
+
+[node name="Arrow_TP_A" parent="." instance=ExtResource("20_4fe0b")]
+position = Vector2(450, 97)
+
+[node name="Arrow_TP_B2" parent="." instance=ExtResource("19_pucme")]
+position = Vector2(697, 293)
+
+[node name="Arrow_TP_A2" parent="." instance=ExtResource("20_4fe0b")]
+position = Vector2(682, -70)
+
+[node name="Arrow_TP_B3" parent="." instance=ExtResource("19_pucme")]
+position = Vector2(184, -58)
+
+[node name="Arrow_TP_A3" parent="." instance=ExtResource("20_4fe0b")]
+position = Vector2(1443, -11)
