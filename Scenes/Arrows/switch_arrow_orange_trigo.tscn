@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://ikc2iouwprn"]
+
+[ext_resource type="Script" path="res://Scripts/Arrows/Switch_Arrow_Orange_Trigo.gd" id="1_yfujb"]
+[ext_resource type="Texture2D" uid="uid://cugqihpe2gdlo" path="res://assets/sprites/arrows/arrow_turnTrigo_orange.png" id="2_26qde"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_uajx8"]
+radius = 43.0116
+
+[node name="Switch_Arrow_Orange_Trigo" type="Area2D"]
+z_index = -1
+script = ExtResource("1_yfujb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(3, 3)
+texture = ExtResource("2_26qde")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_uajx8")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

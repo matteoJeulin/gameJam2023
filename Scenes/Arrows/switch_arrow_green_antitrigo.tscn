@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://cd44g3pae5l2s"]
+
+[ext_resource type="Texture2D" uid="uid://u5emaapiu0c5" path="res://assets/sprites/arrows/arrow_turnAntiTrigo_green.png" id="1_0bmax"]
+[ext_resource type="Script" path="res://Scripts/Arrows/switch_arrow_green_antitrigo.gd" id="1_o1b7q"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_uajx8"]
+radius = 43.0116
+
+[node name="Switch_Arrow_Green_Antitrigo" type="Area2D"]
+z_index = -1
+script = ExtResource("1_o1b7q")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(3, 3)
+texture = ExtResource("1_0bmax")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_uajx8")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="switch_green_antitrigo" from="." to="." method="_on_switch_green_antitrigo"]

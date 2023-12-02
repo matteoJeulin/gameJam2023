@@ -1,10 +1,10 @@
 [gd_scene load_steps=4 format=3 uid="uid://cj0tr61r0yctl"]
 
 [ext_resource type="Script" path="res://Scripts/Arrows/Arrow_Orange_Left.gd" id="1_i0fab"]
-[ext_resource type="Texture2D" uid="uid://bor5bnxp74cyl" path="res://assets/sprites/arrows/arrow_left_orange_1.png" id="2_e7uvl"]
+[ext_resource type="Texture2D" uid="uid://0ywrnbqp3o34" path="res://assets/sprites/arrows/arrow_left_orange_1.png" id="2_e7uvl"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_3b6pe"]
-size = Vector2(48, 34)
+[sub_resource type="CircleShape2D" id="CircleShape2D_clglp"]
+radius = 25.0
 
 [node name="Arrow_Orange_Left" type="Area2D"]
 script = ExtResource("1_i0fab")
@@ -14,6 +14,6 @@ scale = Vector2(3, 3)
 texture = ExtResource("2_e7uvl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_3b6pe")
+shape = SubResource("CircleShape2D_clglp")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
