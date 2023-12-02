@@ -1,8 +1,8 @@
 extends Control
 
-var current_button : Button
+var current_button : TextureButton
 
-@onready var Retour : Button = $Retour
+@onready var Retour : TextureButton = $Retour
 @onready var Bind_Up : TextureButton = $up
 @onready var Bind_Down : TextureButton = $down
 @onready var Bind_Left : TextureButton = $left

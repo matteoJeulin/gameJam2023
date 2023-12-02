@@ -1,36 +1,35 @@
-[gd_scene load_steps=4 format=3 uid="uid://dru3p37g3oku1"]
+[gd_scene load_steps=6 format=3 uid="uid://dru3p37g3oku1"]
 
 [ext_resource type="Script" path="res://Scripts/Menus/Son.gd" id="1_edmod"]
+[ext_resource type="Texture2D" uid="uid://crdqb8qkan56e" path="res://assets/sprites/buttons/back_button.png" id="2_dpcu3"]
 [ext_resource type="PackedScene" uid="uid://0yeadoaxp15h" path="res://Scenes/Menus/backgroud.tscn" id="2_l8pd3"]
 [ext_resource type="Script" path="res://Scripts/Menus/SoundSlider.gd" id="3_mrrvt"]
+[ext_resource type="Texture2D" uid="uid://clpek3a83yynp" path="res://assets/sprites/buttons/sound_button.png" id="4_eas3i"]
 
 [node name="Son" type="Node2D"]
 script = ExtResource("1_edmod")
 
-[node name="Retour" type="Button" parent="."]
-offset_left = 720.0
+[node name="Retour" type="TextureButton" parent="."]
+offset_left = 762.0
 offset_top = 600.0
-offset_right = 919.0
-offset_bottom = 678.0
-text = "Retour"
+offset_right = 1082.0
+offset_bottom = 735.0
+texture_normal = ExtResource("2_dpcu3")
 
 [node name="Backgroud" parent="." instance=ExtResource("2_l8pd3")]
 z_index = -1
 
-[node name="Label" type="Label" parent="."]
-offset_left = 600.0
-offset_top = 360.0
-offset_right = 1163.0
-offset_bottom = 435.0
-text = "
-
-AudioServer.set_bus_volume_db(AudioServer.get_bus_index(\"Master\"), 0)
-"
+[node name="Label" type="TextureRect" parent="."]
+offset_left = 720.0
+offset_top = 441.0
+offset_right = 820.0
+offset_bottom = 541.0
+texture = ExtResource("4_eas3i")
 
 [node name="HSlider" type="HSlider" parent="."]
-offset_left = 683.0
+offset_left = 888.0
 offset_top = 480.0
-offset_right = 965.0
+offset_right = 1170.0
 offset_bottom = 496.0
 script = ExtResource("3_mrrvt")
 

@@ -1,36 +1,50 @@
-[gd_scene load_steps=4 format=3 uid="uid://b51stsao2qne"]
+[gd_scene load_steps=7 format=3 uid="uid://b51stsao2qne"]
 
 [ext_resource type="Script" path="res://Scripts/Menus/options.gd" id="1_youuy"]
 [ext_resource type="Texture2D" uid="uid://cg5a4bjml4ykn" path="res://assets/sprites/buttons/controls_button.png" id="2_cx6ik"]
 [ext_resource type="PackedScene" uid="uid://0yeadoaxp15h" path="res://Scenes/Menus/backgroud.tscn" id="2_y6a53"]
+[ext_resource type="Texture2D" uid="uid://clpek3a83yynp" path="res://assets/sprites/buttons/sound_button.png" id="3_8d5ii"]
+[ext_resource type="Texture2D" uid="uid://d4lq8px2caoja" path="res://assets/sprites/buttons/resume_button.png" id="5_iw0wv"]
+[ext_resource type="Texture2D" uid="uid://ccil5if1stpvp" path="res://assets/sprites/buttons/quit_button.png" id="6_eukcn"]
 
 [node name="Options" type="Node2D"]
 script = ExtResource("1_youuy")
 
 [node name="Controles" type="TextureButton" parent="."]
-offset_left = 801.0
-offset_top = 318.0
-offset_right = 1151.0
-offset_bottom = 453.0
+offset_left = 800.0
+offset_top = 328.0
+offset_right = 1150.0
+offset_bottom = 463.0
+scale = Vector2(1.00744, 1.0088)
 texture_normal = ExtResource("2_cx6ik")
 
-[node name="Son" type="Button" parent="."]
-offset_left = 836.0
-offset_top = 456.0
-offset_right = 1093.0
-offset_bottom = 569.0
-text = "Son"
-
-[node name="Retour" type="Button" parent="."]
-offset_left = 834.0
-offset_top = 591.0
-offset_right = 1091.0
-offset_bottom = 704.0
-text = "Retour"
+[node name="Son" type="TextureButton" parent="."]
+offset_left = 1707.0
+offset_top = 29.0
+offset_right = 1964.0
+offset_bottom = 142.0
+texture_normal = ExtResource("3_8d5ii")
 
 [node name="Backgroud" parent="." instance=ExtResource("2_y6a53")]
 z_index = -1
 
+[node name="Resume" type="TextureButton" parent="."]
+offset_left = 796.0
+offset_top = 488.0
+offset_right = 1116.0
+offset_bottom = 623.0
+scale = Vector2(1.11412, 1.06586)
+texture_normal = ExtResource("5_iw0wv")
+
+[node name="Quit" type="TextureButton" parent="."]
+offset_left = 792.0
+offset_top = 656.0
+offset_right = 1112.0
+offset_bottom = 791.0
+scale = Vector2(1.125, 1.00738)
+texture_normal = ExtResource("6_eukcn")
+
 [connection signal="pressed" from="Controles" to="." method="_on_controles_pressed"]
 [connection signal="pressed" from="Son" to="." method="_on_son_pressed"]
-[connection signal="pressed" from="Retour" to="." method="_on_retour_pressed"]
+[connection signal="pressed" from="Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

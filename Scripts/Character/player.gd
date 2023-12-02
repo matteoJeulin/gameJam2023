@@ -21,7 +21,9 @@ func player_movement(delta) :
 		global_position.y += 10
 	if Input.is_action_just_pressed("restart") :
 		VariablesGlobales.Nb_morts += 1
-		get_tree().change_scene_to_file("res://Scenes/Niveaux/" + VariablesGlobales.Niveau + ".tscn") 
+		get_tree().change_scene_to_file("res://Scenes/Niveaux/" + VariablesGlobales.Niveau + ".tscn")
+	if Input.is_action_just_pressed("controles") :
+		get_tree().change_scene_to_file("res://Scenes/Menus/Options.tscn") 
 	
 	if velocity.length() > 50000 * delta :
 		velocity -= velocity.normalized() * 50000 * delta
@@ -32,7 +34,7 @@ func player_movement(delta) :
 
 
 func _on_pause_pressed():
-	get_tree().change_scene_to_file("res://Scenes/Menus/Pause.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Menus/Options.tscn")
 
 
 func _on_restart_pressed():
