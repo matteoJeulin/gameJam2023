@@ -1,34 +1,36 @@
-[gd_scene load_steps=4 format=3 uid="uid://mnnvyodq4cb4"]
+[gd_scene load_steps=6 format=3 uid="uid://mnnvyodq4cb4"]
 
 [ext_resource type="Script" path="res://Scripts/Menus/pause.gd" id="1_cf7v3"]
-[ext_resource type="Texture2D" uid="uid://b8a0j26ucv1es" path="res://assets/sprites/buttons/play_button.png" id="2_3cmro"]
+[ext_resource type="Texture2D" uid="uid://d4lq8px2caoja" path="res://assets/sprites/buttons/resume_button.png" id="2_e68lo"]
+[ext_resource type="Texture2D" uid="uid://ce00g0eag5c17" path="res://assets/sprites/buttons/settings_button.png" id="3_8bcxf"]
 [ext_resource type="PackedScene" uid="uid://0yeadoaxp15h" path="res://Scenes/Menus/backgroud.tscn" id="3_r0voc"]
+[ext_resource type="Texture2D" uid="uid://ccil5if1stpvp" path="res://assets/sprites/buttons/quit_button.png" id="4_vwyjk"]
 
 [node name="Pause" type="Node2D"]
 script = ExtResource("1_cf7v3")
 
 [node name="Play" type="TextureButton" parent="."]
-offset_left = 582.0
-offset_top = 323.0
-offset_right = 1222.0
-offset_bottom = 458.0
+offset_left = 747.0
+offset_top = 360.0
+offset_right = 1067.0
+offset_bottom = 495.0
 scale = Vector2(1, 0.991373)
 action_mode = 0
-texture_normal = ExtResource("2_3cmro")
+texture_normal = ExtResource("2_e68lo")
 
-[node name="Options" type="Button" parent="."]
-offset_left = 767.0
-offset_top = 459.0
-offset_right = 1047.0
-offset_bottom = 577.0
-text = "Options pause"
+[node name="Options" type="TextureButton" parent="."]
+offset_left = 1722.0
+offset_top = 5.0
+offset_right = 2014.0
+offset_bottom = 123.0
+texture_normal = ExtResource("3_8bcxf")
 
-[node name="Quit" type="Button" parent="."]
-offset_left = 767.0
-offset_top = 585.0
-offset_right = 1047.0
-offset_bottom = 703.0
-text = "Quit"
+[node name="Quit" type="TextureButton" parent="."]
+offset_left = 744.0
+offset_top = 515.0
+offset_right = 1064.0
+offset_bottom = 650.0
+texture_normal = ExtResource("4_vwyjk")
 
 [node name="Backgroud" parent="." instance=ExtResource("3_r0voc")]
 visible = false

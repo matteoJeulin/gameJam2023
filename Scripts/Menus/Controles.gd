@@ -3,12 +3,12 @@ extends Control
 var current_button : Button
 
 @onready var Retour : Button = $Retour
-@onready var Bind_Up : Button = $up
-@onready var Bind_Down : Button = $down
-@onready var Bind_Left : Button = $left
-@onready var Bind_Right : Button = $right
-@onready var Bind_Action : Button = $action
-@onready var Bind_Restart : Button = $restart
+@onready var Bind_Up : TextureButton = $up
+@onready var Bind_Down : TextureButton = $down
+@onready var Bind_Left : TextureButton = $left
+@onready var Bind_Right : TextureButton = $right
+@onready var Bind_Action : TextureButton = $action
+@onready var Bind_Restart : TextureButton = $restart
 @onready var label_up : Label = $Label_up
 @onready var label_down : Label = $Label_down
 @onready var label_left : Label = $Label_left
@@ -18,17 +18,17 @@ var current_button : Button
 
 func _ready():
 	# Connect the buttons pressed signal:
-	Bind_Up.pressed.connect(_on_button_pressed.bind(Bind_Up))
-	Bind_Down.pressed.connect(_on_button_pressed.bind(Bind_Down))
-	Bind_Left.pressed.connect(_on_button_pressed.bind(Bind_Left))
-	Bind_Right.pressed.connect(_on_button_pressed.bind(Bind_Right))
-	Bind_Action.pressed.connect(_on_button_pressed.bind(Bind_Action))	
-	Bind_Restart.pressed.connect(_on_button_pressed.bind(Bind_Restart))
+	Bind_Up.pressed.connect(_on_texture_button_pressed.bind(Bind_Up))
+	Bind_Down.pressed.connect(_on_texture_button_pressed.bind(Bind_Down))
+	Bind_Left.pressed.connect(_on_texture_button_pressed.bind(Bind_Left))
+	Bind_Right.pressed.connect(_on_texture_button_pressed.bind(Bind_Right))
+	Bind_Action.pressed.connect(_on_texture_button_pressed.bind(Bind_Action))	
+	Bind_Restart.pressed.connect(_on_texture_button_pressed.bind(Bind_Restart))
 	_update_labels() # called to refresh the labels
 	
 	
 # Whenerver a button is pressed, do:
-func _on_button_pressed(button: Button):
+func _on_texture_button_pressed(button: TextureButton):
 	if button != Retour:
 		current_button = button # assign clicked button to current_button
 	

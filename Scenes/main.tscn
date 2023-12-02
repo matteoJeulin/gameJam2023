@@ -1,13 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://bug34b24kytis"]
+[gd_scene load_steps=4 format=3 uid="uid://bug34b24kytis"]
 
 [ext_resource type="PackedScene" uid="uid://cedasj6m778up" path="res://Scenes/Characters/player.tscn" id="1_i66x2"]
 [ext_resource type="Script" path="res://Scripts/main.gd" id="1_nahc7"]
-[ext_resource type="PackedScene" uid="uid://lm83ys14qsfi" path="res://Scenes/Arrows/arrow_red_up.tscn" id="3_ik31v"]
-[ext_resource type="PackedScene" uid="uid://lpjjmh464eur" path="res://Scenes/Arrows/arrow_red_down.tscn" id="4_tx58o"]
-[ext_resource type="PackedScene" uid="uid://cfiudjj01ig7e" path="res://Scenes/Arrows/arrow_red_left.tscn" id="5_q8lcd"]
-[ext_resource type="PackedScene" uid="uid://di4nbb03jmg8w" path="res://Scenes/Arrows/arrow_red_right.tscn" id="6_27o5n"]
 [ext_resource type="PackedScene" uid="uid://s51h0dfc65kl" path="res://Scenes/Characters/NPC.tscn" id="7_d7gbq"]
-[ext_resource type="PackedScene" uid="uid://cu043tctwjj0c" path="res://Scenes/Arrows/arrow_tp.tscn" id="8_8yx3s"]
 
 [node name="Main" type="Node2D"]
 y_sort_enabled = true
@@ -17,25 +12,6 @@ script = ExtResource("1_nahc7")
 z_index = 1
 position = Vector2(34, 127)
 
-[node name="ArrowUp" parent="." instance=ExtResource("3_ik31v")]
-z_index = -1
-position = Vector2(441, 212)
-
-[node name="Arrow_Down" parent="." instance=ExtResource("4_tx58o")]
-z_index = -1
-position = Vector2(446, 729)
-
-[node name="Arrow_Left" parent="." instance=ExtResource("5_q8lcd")]
-z_index = -1
-position = Vector2(114, 460)
-
-[node name="Arrow_Right" parent="." instance=ExtResource("6_27o5n")]
-z_index = -1
-position = Vector2(646, 461)
-
 [node name="CharacterBody2D" parent="." instance=ExtResource("7_d7gbq")]
 y_sort_enabled = true
 position = Vector2(-99, 155)
-
-[node name="Arrow_TP" parent="." instance=ExtResource("8_8yx3s")]
-position = Vector2(1008, 204)

@@ -1,35 +1,36 @@
-[gd_scene load_steps=3 format=3 uid="uid://b51stsao2qne"]
+[gd_scene load_steps=4 format=3 uid="uid://b51stsao2qne"]
 
 [ext_resource type="Script" path="res://Scripts/Menus/options.gd" id="1_youuy"]
+[ext_resource type="Texture2D" uid="uid://cg5a4bjml4ykn" path="res://assets/sprites/buttons/controls_button.png" id="2_cx6ik"]
 [ext_resource type="PackedScene" uid="uid://0yeadoaxp15h" path="res://Scenes/Menus/backgroud.tscn" id="2_y6a53"]
 
 [node name="Options" type="Node2D"]
 script = ExtResource("1_youuy")
 
-[node name="Contrôles" type="Button" parent="."]
-offset_left = 839.0
-offset_top = 322.0
-offset_right = 1097.0
-offset_bottom = 433.0
-text = "Contrôles"
+[node name="Controles" type="TextureButton" parent="."]
+offset_left = 801.0
+offset_top = 318.0
+offset_right = 1151.0
+offset_bottom = 453.0
+texture_normal = ExtResource("2_cx6ik")
 
 [node name="Son" type="Button" parent="."]
-offset_left = 840.0
-offset_top = 443.0
-offset_right = 1097.0
-offset_bottom = 556.0
+offset_left = 836.0
+offset_top = 456.0
+offset_right = 1093.0
+offset_bottom = 569.0
 text = "Son"
 
 [node name="Retour" type="Button" parent="."]
-offset_left = 840.0
-offset_top = 568.0
-offset_right = 1097.0
-offset_bottom = 681.0
+offset_left = 834.0
+offset_top = 591.0
+offset_right = 1091.0
+offset_bottom = 704.0
 text = "Retour"
 
 [node name="Backgroud" parent="." instance=ExtResource("2_y6a53")]
 z_index = -1
 
-[connection signal="pressed" from="Contrôles" to="." method="_on_contrôles_pressed"]
+[connection signal="pressed" from="Controles" to="." method="_on_controles_pressed"]
 [connection signal="pressed" from="Son" to="." method="_on_son_pressed"]
 [connection signal="pressed" from="Retour" to="." method="_on_retour_pressed"]

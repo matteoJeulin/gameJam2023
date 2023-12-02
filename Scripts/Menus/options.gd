@@ -7,11 +7,6 @@ func _ready():
 
 
 
-
-func _on_contrôles_pressed():
-	get_tree().change_scene_to_file("res://Scenes/Menus/Controles.tscn")
-
-
 func _on_son_pressed():
 	get_tree().change_scene_to_file("res://Scenes/Menus/Son.tscn")
 
@@ -21,3 +16,7 @@ func _on_retour_pressed():
 		get_tree().change_scene_to_file("res://Scenes/Menus/Pause.tscn")
 	else :
 		get_tree().change_scene_to_file("res://Scenes/Menus/Startmenu.tscn")
+
+
+func _on_controles_pressed():
+	get_tree().change_scene_to_file("res://Scenes/Menus/Controles.tscn")
