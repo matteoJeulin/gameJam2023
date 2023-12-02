@@ -8,11 +8,13 @@ var current_button : Button
 @onready var Bind_Left : Button = $left
 @onready var Bind_Right : Button = $right
 @onready var Bind_Action : Button = $action
+@onready var Bind_Restart : Button = $restart
 @onready var label_up : Label = $Label_up
 @onready var label_down : Label = $Label_down
 @onready var label_left : Label = $Label_left
 @onready var label_right : Label = $Label_right
 @onready var label_action : Label = $Label_action
+@onready var label_restart : Label = $Label_restart
 
 func _ready():
 	# Connect the buttons pressed signal:
@@ -21,6 +23,7 @@ func _ready():
 	Bind_Left.pressed.connect(_on_button_pressed.bind(Bind_Left))
 	Bind_Right.pressed.connect(_on_button_pressed.bind(Bind_Right))
 	Bind_Action.pressed.connect(_on_button_pressed.bind(Bind_Action))	
+	Bind_Restart.pressed.connect(_on_button_pressed.bind(Bind_Restart))
 	_update_labels() # called to refresh the labels
 	
 	
@@ -90,6 +93,12 @@ func _update_labels():
 		label_action.text = eb5[0].as_text()
 	else:
 		label_action.text = ""
+		
+	var eb6 : Array[InputEvent] = InputMap.action_get_events("restart")
+	if !eb6.is_empty():
+		label_restart.text = eb6[0].as_text()
+	else:
+		label_restart.text = ""
 
 
 func _on_retour_pressed():
