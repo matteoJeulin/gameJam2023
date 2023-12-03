@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://cedasj6m778up"]
+[gd_scene load_steps=7 format=3 uid="uid://cedasj6m778up"]
 
 [ext_resource type="Script" path="res://Scripts/Character/player.gd" id="1_fy2mp"]
 [ext_resource type="Texture2D" uid="uid://djitfxu20dcva" path="res://assets/sprites/player/player_down.png" id="2_ep43r"]
+[ext_resource type="Texture2D" uid="uid://ce00g0eag5c17" path="res://assets/sprites/buttons/settings_button.png" id="3_1i5jl"]
 [ext_resource type="Texture2D" uid="uid://bwxxmascex13p" path="res://assets/sprites/buttons/restart_button.png" id="3_f5hwx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xqgxk"]
@@ -24,18 +25,18 @@ shape = SubResource("RectangleShape2D_xqgxk")
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(1.3, 1.3)
 
-[node name="Pause" type="Button" parent="."]
-offset_left = 639.0
+[node name="Pause" type="TextureButton" parent="."]
+offset_left = 352.0
 offset_top = -381.0
-offset_right = 703.0
-offset_bottom = -350.0
-text = "Pause"
+offset_right = 452.0
+offset_bottom = -281.0
+texture_normal = ExtResource("3_1i5jl")
 
 [node name="Restart" type="TextureButton" parent="."]
-offset_left = 486.0
-offset_top = -346.0
-offset_right = 806.0
-offset_bottom = -211.0
+offset_left = 459.0
+offset_top = -372.0
+offset_right = 779.0
+offset_bottom = -237.0
 scale = Vector2(0.715801, 0.691507)
 texture_normal = ExtResource("3_f5hwx")
 script = SubResource("GDScript_5sml8")

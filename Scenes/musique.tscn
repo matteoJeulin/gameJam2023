@@ -1,0 +1,33 @@
+[gd_scene load_steps=7 format=3 uid="uid://d351n02suegdl"]
+
+[ext_resource type="AudioStream" uid="uid://cogo6vquwmqeb" path="res://MusiqueGamejam/musique/Adventure-320bit(chosic.com).mp3" id="2_ma7cq"]
+[ext_resource type="AudioStream" uid="uid://bi0y2smhkabjh" path="res://MusiqueGamejam/musique/Into-Oblivion(chosic.com).mp3" id="3_k2rce"]
+[ext_resource type="AudioStream" uid="uid://b13yhctxb3fbl" path="res://MusiqueGamejam/musique/PerituneMaterial_Foreboding(chosic.com).mp3" id="4_3oesl"]
+[ext_resource type="AudioStream" uid="uid://djlqpilg1o65" path="res://MusiqueGamejam/musique/Wintersong(chosic.com).mp3" id="5_qqayy"]
+
+[sub_resource type="GDScript" id="GDScript_0714j"]
+script/source = "extends Node2D
+
+func _ready():
+	get_tree().change_scene_to_file(\"res://Scenes/Menus/Startmenu.tscn\")
+"
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_jpjg3"]
+playback_mode = 1
+streams_count = 4
+stream_0/stream = ExtResource("2_ma7cq")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("3_k2rce")
+stream_1/weight = 1.0
+stream_2/stream = ExtResource("4_3oesl")
+stream_2/weight = 1.0
+stream_3/stream = ExtResource("5_qqayy")
+stream_3/weight = 1.0
+
+[node name="Musique" type="Node2D"]
+script = SubResource("GDScript_0714j")
+
+[node name="Musique de fond" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamRandomizer_jpjg3")
+volume_db = -5.0
+autoplay = true

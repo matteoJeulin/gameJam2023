@@ -27,10 +27,12 @@ offset_bottom = 541.0
 texture = ExtResource("4_eas3i")
 
 [node name="HSlider" type="HSlider" parent="."]
-offset_left = 888.0
+offset_left = 867.0
 offset_top = 480.0
-offset_right = 1170.0
+offset_right = 1149.0
 offset_bottom = 496.0
+min_value = -30.0
+max_value = 0.0
 script = ExtResource("3_mrrvt")
 
 [connection signal="pressed" from="Retour" to="." method="_on_retour_pressed"]

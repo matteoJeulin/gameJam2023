@@ -1,12 +1,7 @@
 extends Node2D
 
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+var master_bus = AudioServer.get_bus_index("Master")
 
 
 func _on_retour_pressed():
@@ -14,5 +9,9 @@ func _on_retour_pressed():
 
 
 func _on_h_slider_value_changed(value):
-	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Master"), value)
+	AudioServer.set_bus_volume_db(master_bus, value)
+	if value == -30 :
+		AudioServer.set_bus_mute(master_bus,true)
+	else : 
+		AudioServer.set_bus_mute(master_bus,false)
 
