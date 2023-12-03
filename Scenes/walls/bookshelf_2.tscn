@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjfoiipfh2imn"]
+
+[ext_resource type="Texture2D" uid="uid://do234slpurtv1" path="res://assets/sprites/walls/bookshelf_2.png" id="1_j2xg7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ff5mi"]
+size = Vector2(50, 42)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_j2xg7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 15)
+shape = SubResource("RectangleShape2D_ff5mi")
