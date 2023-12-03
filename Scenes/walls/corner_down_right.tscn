@@ -12,5 +12,6 @@ scale = Vector2(4, 4)
 texture = ExtResource("1_psl5d")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+y_sort_enabled = true
 position = Vector2(0.5, 15.75)
 shape = SubResource("RectangleShape2D_hb0bb")

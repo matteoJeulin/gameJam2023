@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://c7qt7e1232cl8"]
 
-[ext_resource type="Texture2D" uid="uid://bq5qdg3obrm05" path="res://assets/sprites/walls/end_wall_down.png" id="1_67fwt"]
+[ext_resource type="Texture2D" uid="uid://ks8ehxlyiagb" path="res://assets/sprites/walls/end_wall_down.png" id="1_67fwt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5a4ab"]
 size = Vector2(22, 40)
@@ -13,5 +13,6 @@ position = Vector2(0, 2)
 texture = ExtResource("1_67fwt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+y_sort_enabled = true
 position = Vector2(0, -3)
 shape = SubResource("RectangleShape2D_5a4ab")
