@@ -12,7 +12,7 @@ func _on_quit_pressed():
 
 func _on_resume_pressed():
 	VariablesGlobales.GameStarted = true
-	get_tree().change_scene_to_file("res://Scenes/main.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Niveaux/exterieur.tscn")
 
 
 func _on_options_pressed():

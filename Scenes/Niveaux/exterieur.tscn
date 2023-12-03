@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://6nxk637g076d"]
+
+[ext_resource type="Texture2D" uid="uid://200g0si4cqht" path="res://assets/sprites/background/outside.png" id="1_cnaxn"]
+[ext_resource type="PackedScene" uid="uid://cedasj6m778up" path="res://Scenes/Characters/player.tscn" id="2_wlrfj"]
+
+[node name="Exterieur" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-3, 0)
+scale = Vector2(2, 2)
+texture = ExtResource("1_cnaxn")
+
+[node name="Player" parent="." instance=ExtResource("2_wlrfj")]
+position = Vector2(-1551, 483)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://s185xtnx0xmr"]
+[gd_scene load_steps=41 format=3 uid="uid://2pj73npuybko"]
 
 [ext_resource type="Script" path="res://Scripts/Niveaux/Niveau1.gd" id="1_t8ghe"]
 [ext_resource type="PackedScene" uid="uid://cedasj6m778up" path="res://Scenes/Characters/player.tscn" id="2_egr84"]
@@ -18,6 +18,16 @@
 [ext_resource type="PackedScene" uid="uid://trh5eavjbnls" path="res://Scenes/Arrows/arrow_green_right.tscn" id="16_puunm"]
 [ext_resource type="PackedScene" uid="uid://bg778ttbu4y1r" path="res://Scenes/Arrows/arrow_green_up.tscn" id="17_v1p67"]
 [ext_resource type="PackedScene" uid="uid://gf4361fni7v1" path="res://Scenes/Niveaux/fin.tscn" id="18_km7lr"]
+[ext_resource type="PackedScene" uid="uid://cmabdk27umqyq" path="res://Scenes/walls/wall.tscn" id="19_2olg4"]
+[ext_resource type="PackedScene" uid="uid://cd44g3pae5l2s" path="res://Scenes/Arrows/switch_arrow_green_antitrigo.tscn" id="19_ap3dj"]
+[ext_resource type="PackedScene" uid="uid://dexipce3q7nkx" path="res://Scenes/Arrows/switch_arrow_green_trigo.tscn" id="20_45mvg"]
+[ext_resource type="PackedScene" uid="uid://bgr7ii72xhhat" path="res://Scenes/walls/bookshelf_1.tscn" id="20_uxwmu"]
+[ext_resource type="PackedScene" uid="uid://bjfoiipfh2imn" path="res://Scenes/walls/bookshelf_2.tscn" id="21_7pplj"]
+[ext_resource type="PackedScene" uid="uid://d3cprgkp16vvw" path="res://Scenes/walls/bookshelf_3.tscn" id="22_1jcgp"]
+[ext_resource type="PackedScene" uid="uid://6inlq0u0vuvx" path="res://Scenes/walls/corner_down_right.tscn" id="23_44tnc"]
+[ext_resource type="PackedScene" uid="uid://do3kggeqp0fmq" path="res://Scenes/walls/corner_up_right.tscn" id="24_jfr7n"]
+[ext_resource type="PackedScene" uid="uid://bjkut7wf8awkb" path="res://Scenes/walls/corner_down_left.tscn" id="25_tbcyy"]
+[ext_resource type="PackedScene" uid="uid://do8yeugxm7id" path="res://Scenes/walls/corner_up_left.tscn" id="26_85h5x"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tlpkx"]
 texture = ExtResource("3_j0dmn")
@@ -123,22 +133,12 @@ sources/10 = SubResource("TileSetAtlasSource_6im8x")
 [node name="Niveau1" type="Node2D"]
 script = ExtResource("1_t8ghe")
 
-[node name="Label" type="Label" parent="."]
-offset_left = 401.0
-offset_top = 192.0
-offset_right = 874.0
-offset_bottom = 324.0
-text = "Ca marche"
-
-[node name="Label2" type="Label" parent="."]
-offset_right = 248.0
-offset_bottom = 90.0
-
 [node name="Player" parent="." instance=ExtResource("2_egr84")]
 z_index = 1
 position = Vector2(1771, 3102)
 
 [node name="Floor" type="TileMap" parent="."]
+z_index = -1
 position = Vector2(-728.504, 159.461)
 scale = Vector2(6, 6)
 tile_set = SubResource("TileSet_p7qht")
@@ -301,3 +301,46 @@ position = Vector2(1233, 1137)
 
 [node name="Fin" parent="." instance=ExtResource("18_km7lr")]
 position = Vector2(3597, 720)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("19_2olg4")]
+y_sort_enabled = true
+position = Vector2(3013, 1757)
+
+[node name="CharacterBody2D2" parent="." instance=ExtResource("19_2olg4")]
+y_sort_enabled = true
+position = Vector2(3013, 1956)
+
+[node name="CharacterBody2D3" parent="." instance=ExtResource("19_2olg4")]
+y_sort_enabled = true
+position = Vector2(3013, 2088)
+
+[node name="CharacterBody2D4" parent="." instance=ExtResource("20_uxwmu")]
+position = Vector2(1498, 2302)
+
+[node name="CharacterBody2D5" parent="." instance=ExtResource("21_7pplj")]
+position = Vector2(271, 2088)
+
+[node name="CharacterBody2D6" parent="." instance=ExtResource("22_1jcgp")]
+y_sort_enabled = true
+position = Vector2(2863, 2342)
+
+[node name="CharacterBody2D7" parent="." instance=ExtResource("23_44tnc")]
+position = Vector2(2049, 2342)
+
+[node name="CharacterBody2D8" parent="." instance=ExtResource("24_jfr7n")]
+position = Vector2(-358, 1783)
+
+[node name="CharacterBody2D9" parent="." instance=ExtResource("25_tbcyy")]
+position = Vector2(-135, 1936)
+
+[node name="CharacterBody2D10" parent="." instance=ExtResource("26_85h5x")]
+y_sort_enabled = true
+position = Vector2(3013, 2338)
+
+[node name="Switch_Arrow_Green_Antitrigo" parent="." instance=ExtResource("19_ap3dj")]
+z_index = 0
+position = Vector2(-330, 1043)
+
+[node name="Switch_Arrow_Green_Trigo" parent="." instance=ExtResource("20_45mvg")]
+z_index = 0
+position = Vector2(-539, 755)
