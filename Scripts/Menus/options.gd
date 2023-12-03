@@ -16,7 +16,7 @@ func _on_controles_pressed():
 
 func _on_resume_pressed():
 	if VariablesGlobales.GameStarted :
-		get_tree().change_scene_to_file("res://Scenes/Niveaux/" + VariablesGlobales.Niveau + ".tscn")
+		get_tree().change_scene_to_file("res://Scenes/Niveaux/Niveau" + str(VariablesGlobales.Niveau) + ".tscn")
 	else :
 		get_tree().change_scene_to_file("res://Scenes/Menus/Startmenu.tscn")
 

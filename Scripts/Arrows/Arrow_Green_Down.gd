@@ -1,14 +1,14 @@
 extends Area2D
  
-var accel = 4000
+var accel = 6000
 const Types = preload("res://Scripts/Test_types.gd")
 var type = Types.green.new()
 var direction = 0
 var directions = ["down", "right","up", "left"]
 
 func _ready() :
-	get_node("../Switch_Arrow_Green_Antitrigo").connect("switch_" + type.color + "_antitrigo", switch_antitrigo)
-	get_node("../Switch_Arrow_Green_Trigo").connect("switch_" + type.color + "_trigo", switch_trigo)
+	#get_node("../Switch_Arrow_Green_Antitrigo").connect("switch_" + type.color + "_antitrigo", switch_antitrigo)
+	#get_node("../Switch_Arrow_Green_Trigo").connect("switch_" + type.color + "_trigo", switch_trigo)
 	$Sprite2D.texture = load("res://assets/sprites/arrows/arrow_" + directions[direction] + "_" + type.color + "_" + str(randi_range(1,4)) +".png")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

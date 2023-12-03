@@ -38,5 +38,5 @@ func _on_pause_pressed():
 
 
 func _on_restart_pressed():
-	get_tree().change_scene_to_file("res://Scenes/Niveaux/" + VariablesGlobales.Niveau + ".tscn") 
+	get_tree().change_scene_to_file("res://Scenes/Niveaux/Niveau" + str(VariablesGlobales.Niveau) + ".tscn") 
 	VariablesGlobales.Nb_morts += 1

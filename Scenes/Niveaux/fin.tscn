@@ -1,0 +1,40 @@
+[gd_scene load_steps=7 format=3 uid="uid://gf4361fni7v1"]
+
+[ext_resource type="Script" path="res://Scripts/Niveaux/fin.gd" id="1_88wor"]
+[ext_resource type="Texture2D" uid="uid://c0ycpuvmcq5hf" path="res://assets/sprites/environement/orb_1.png" id="1_x8fqe"]
+[ext_resource type="Texture2D" uid="uid://jiiky65eeov1" path="res://assets/sprites/environement/orb_2.png" id="2_b8umb"]
+[ext_resource type="Texture2D" uid="uid://bfuxn7f7ti2iu" path="res://assets/sprites/environement/orb_3.png" id="3_h5eab"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rvikx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_x8fqe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_b8umb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_h5eab")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5y4u5"]
+radius = 61.0
+height = 240.0
+
+[node name="Fin" type="Area2D"]
+script = ExtResource("1_88wor")
+
+[node name="animation" type="AnimatedSprite2D" parent="."]
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_rvikx")
+frame_progress = 0.0687193
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_5y4u5")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

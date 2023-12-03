@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://bb55jlmc6vyl4"]
+[gd_scene load_steps=29 format=3 uid="uid://bb55jlmc6vyl4"]
 
 [ext_resource type="PackedScene" uid="uid://cedasj6m778up" path="res://Scenes/Characters/player.tscn" id="1_sblqm"]
 [ext_resource type="PackedScene" uid="uid://s51h0dfc65kl" path="res://Scenes/Characters/NPC.tscn" id="2_s1da7"]
@@ -20,12 +20,20 @@
 [ext_resource type="PackedScene" uid="uid://b27sy2adxgrnw" path="res://Scenes/Arrows/arrow_tp_b.tscn" id="19_pucme"]
 [ext_resource type="PackedScene" uid="uid://b3fl1w42unckm" path="res://Scenes/Arrows/arrow_yellow_up.tscn" id="19_ykf5q"]
 [ext_resource type="PackedScene" uid="uid://ch6a1y1bw17ky" path="res://Scenes/Arrows/arrow_tp_a.tscn" id="20_4fe0b"]
+[ext_resource type="PackedScene" uid="uid://cd44g3pae5l2s" path="res://Scenes/Arrows/switch_arrow_green_antitrigo.tscn" id="21_htack"]
+[ext_resource type="PackedScene" uid="uid://dexipce3q7nkx" path="res://Scenes/Arrows/switch_arrow_green_trigo.tscn" id="22_077jn"]
+[ext_resource type="PackedScene" uid="uid://c4dhrs67rgyos" path="res://Scenes/Arrows/switch_arrow_red_trigo.tscn" id="23_ay1fl"]
+[ext_resource type="PackedScene" uid="uid://ikc2iouwprn" path="res://Scenes/Arrows/switch_arrow_orange_trigo.tscn" id="24_ywrde"]
+[ext_resource type="PackedScene" uid="uid://l61yo83fqpk6" path="res://Scenes/Arrows/switch_arrow_yellow_trigo.tscn" id="25_spvqy"]
+[ext_resource type="PackedScene" uid="uid://bq7e8fn7mtxxx" path="res://Scenes/Arrows/switch_arrow_red_antitrigo.tscn" id="26_s255x"]
+[ext_resource type="PackedScene" uid="uid://cojx3wmn0k8jd" path="res://Scenes/Arrows/switch_arrow_yellow_antitrigo.tscn" id="27_qjwnb"]
+[ext_resource type="PackedScene" uid="uid://bl6gs4yirlmm" path="res://Scenes/Arrows/switch_arrow_orange_antitrigo.tscn" id="28_dqprr"]
 
 [node name="Game_Test" type="Node2D"]
 y_sort_enabled = true
 
 [node name="Player" parent="." instance=ExtResource("1_sblqm")]
-position = Vector2(56, 144)
+position = Vector2(95, 189)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_s1da7")]
 y_sort_enabled = true
@@ -53,7 +61,7 @@ position = Vector2(-400, 697)
 
 [node name="Arrow_Red_Down" parent="." instance=ExtResource("9_go34q")]
 z_index = -1
-position = Vector2(506, 655)
+position = Vector2(219, 404)
 
 [node name="Arrow_Yellow_Down" parent="." instance=ExtResource("10_fist5")]
 z_index = -1
@@ -65,7 +73,7 @@ position = Vector2(-540, 553)
 
 [node name="Arrow_Red_Left" parent="." instance=ExtResource("12_hgjhj")]
 z_index = -1
-position = Vector2(349, 530)
+position = Vector2(358, 512)
 
 [node name="Arrow_Yellow_Left" parent="." instance=ExtResource("13_bit3h")]
 z_index = -1
@@ -77,7 +85,7 @@ position = Vector2(-227, 553)
 
 [node name="Arrow_Red_Right" parent="." instance=ExtResource("15_vno5c")]
 z_index = -1
-position = Vector2(654, 529)
+position = Vector2(78, 511)
 
 [node name="Arrow_Yellow_Right" parent="." instance=ExtResource("16_8u4ng")]
 z_index = -1
@@ -89,7 +97,7 @@ position = Vector2(-385, 430)
 
 [node name="Arrow_Red_Up" parent="." instance=ExtResource("18_18no2")]
 z_index = -1
-position = Vector2(496, 402)
+position = Vector2(217, 618)
 
 [node name="Arrow_Yellow_Up" parent="." instance=ExtResource("19_ykf5q")]
 z_index = -1
@@ -105,10 +113,37 @@ position = Vector2(450, 97)
 position = Vector2(697, 293)
 
 [node name="Arrow_TP_A2" parent="." instance=ExtResource("20_4fe0b")]
-position = Vector2(682, -70)
+position = Vector2(681, -70)
 
 [node name="Arrow_TP_B3" parent="." instance=ExtResource("19_pucme")]
 position = Vector2(184, -58)
 
 [node name="Arrow_TP_A3" parent="." instance=ExtResource("20_4fe0b")]
 position = Vector2(1443, -11)
+
+[node name="Switch_Arrow_Green_Antitrigo" parent="." instance=ExtResource("21_htack")]
+position = Vector2(-4, 835)
+
+[node name="Switch_Arrow_Green_Antitrigo2" parent="." instance=ExtResource("21_htack")]
+position = Vector2(-4, 835)
+
+[node name="Switch_Arrow_Green_Trigo" parent="." instance=ExtResource("22_077jn")]
+position = Vector2(-234, 859)
+
+[node name="Switch_Arrow_Red_Trigo" parent="." instance=ExtResource("23_ay1fl")]
+position = Vector2(525, 806)
+
+[node name="Switch_Arrow_Orange_Trigo" parent="." instance=ExtResource("24_ywrde")]
+position = Vector2(-1035, 851)
+
+[node name="Switch_Arrow_Yellow_Trigo" parent="." instance=ExtResource("25_spvqy")]
+position = Vector2(1486, 909)
+
+[node name="Switch_Arrow_Red_Antitrigo" parent="." instance=ExtResource("26_s255x")]
+position = Vector2(321, 815)
+
+[node name="Switch_Arrow_Yellow_Antitrigo" parent="." instance=ExtResource("27_qjwnb")]
+position = Vector2(1316, 918)
+
+[node name="Switch_Arrow_Orange_Antitrigo" parent="." instance=ExtResource("28_dqprr")]
+position = Vector2(-1239, 854)
