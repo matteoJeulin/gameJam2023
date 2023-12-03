@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scripts/Niveaux/Niveau0.gd" id="1_yktbp"]
 [ext_resource type="PackedScene" uid="uid://cedasj6m778up" path="res://Scenes/Characters/player.tscn" id="2_ue7vy"]
 [ext_resource type="PackedScene" uid="uid://gf4361fni7v1" path="res://Scenes/Niveaux/fin.tscn" id="3_egego"]
-[ext_resource type="Texture2D" uid="uid://dx4hayn1y58ud" path="res://assets/sprites/background/floor.png" id="4_0ynkt"]
+[ext_resource type="Texture2D" uid="uid://dhq3bimjfac4r" path="res://assets/sprites/background/floor.png" id="4_0ynkt"]
 [ext_resource type="PackedScene" uid="uid://trh5eavjbnls" path="res://Scenes/Arrows/arrow_green_right.tscn" id="5_6rsfk"]
 [ext_resource type="PackedScene" uid="uid://2foxy4jqmq1w" path="res://Scenes/Arrows/arrow_green_down.tscn" id="6_lgssf"]
 [ext_resource type="PackedScene" uid="uid://dk2jlaunl863b" path="res://Scenes/Arrows/arrow_green_left.tscn" id="7_6gyed"]
