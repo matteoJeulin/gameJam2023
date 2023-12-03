@@ -6,11 +6,9 @@
 size = Vector2(49, 43)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
-y_sort_enabled = true
 scale = Vector2(4, 4)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-y_sort_enabled = true
 position = Vector2(0, -1)
 texture = ExtResource("1_o1wk0")
 
