@@ -10,6 +10,7 @@ size = Vector2(92, 74)
 [sub_resource type="GDScript" id="GDScript_5sml8"]
 
 [node name="Player" type="CharacterBody2D"]
+y_sort_enabled = true
 script = ExtResource("1_fy2mp")
 
 [node name="Sprite" type="Sprite2D" parent="."]

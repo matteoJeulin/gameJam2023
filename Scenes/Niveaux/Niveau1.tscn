@@ -328,145 +328,110 @@ position = Vector2(1233, 1137)
 position = Vector2(3597, 720)
 
 [node name="CharacterBody2D11" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(4216, 1830)
 
 [node name="CharacterBody2D35" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(632, 1760)
 
 [node name="CharacterBody2D36" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(632, 1611)
 
 [node name="CharacterBody2D37" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(632, 1414)
 
 [node name="CharacterBody2D38" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(632, 1216)
 
 [node name="CharacterBody2D39" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(632, 1016)
 
 [node name="CharacterBody2D90" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(357, 1380)
 
 [node name="CharacterBody2D91" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(357, 1231)
 
 [node name="CharacterBody2D92" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(357, 1034)
 
 [node name="CharacterBody2D95" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(357, 1924)
 
 [node name="CharacterBody2D98" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(357, 2010)
 
 [node name="CharacterBody2D139" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(392, 2624)
 
 [node name="CharacterBody2D141" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(392, 2456)
 
 [node name="CharacterBody2D96" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(357, 1775)
 
 [node name="CharacterBody2D97" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(357, 1578)
 
 [node name="CharacterBody2D93" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(357, 836)
 
 [node name="CharacterBody2D94" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(357, 636)
 
 [node name="CharacterBody2D40" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(912, 1414)
 
 [node name="CharacterBody2D60" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(1506, 1716)
 
 [node name="CharacterBody2D46" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(912, 1216)
 
 [node name="CharacterBody2D42" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(912, 1760)
 
 [node name="CharacterBody2D45" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(912, 1611)
 
 [node name="CharacterBody2D28" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(4216, 1630)
 
 [node name="CharacterBody2D29" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(4216, 1432)
 
 [node name="CharacterBody2D30" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(4216, 1238)
 
 [node name="CharacterBody2D31" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(4216, 1038)
 
 [node name="CharacterBody2D32" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(4216, 837)
 rotation = -0.0018585
 
 [node name="CharacterBody2D33" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(4216, 638)
 rotation = -0.0018585
 
 [node name="CharacterBody2D84" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(2752, 978)
 
 [node name="CharacterBody2D27" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(4216, 2030)
 
 [node name="CharacterBody2D118" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(4216, 2624)
 
 [node name="CharacterBody2D119" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(4216, 2426)
 
 [node name="CharacterBody2D120" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(4216, 2232)
 
 [node name="CharacterBody2D3" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(2896, 2077)
 
 [node name="CharacterBody2D8" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(3780, 1973)
 
 [node name="CharacterBody2D4" parent="." instance=ExtResource("20_uxwmu")]
@@ -530,7 +495,7 @@ position = Vector2(3215, 1551)
 position = Vector2(3807, 1551)
 
 [node name="CharacterBody2D58" parent="." instance=ExtResource("20_uxwmu")]
-position = Vector2(1608, 1328)
+position = Vector2(1601, 1299)
 
 [node name="CharacterBody2D64" parent="." instance=ExtResource("20_uxwmu")]
 position = Vector2(1648, 1845)
@@ -698,19 +663,15 @@ position = Vector2(1097, 2170)
 position = Vector2(1297, 2170)
 
 [node name="CharacterBody2D6" parent="." instance=ExtResource("22_1jcgp")]
-y_sort_enabled = true
 position = Vector2(2746, 2331)
 
 [node name="CharacterBody2D21" parent="." instance=ExtResource("22_1jcgp")]
-y_sort_enabled = true
 position = Vector2(2547, 2331)
 
 [node name="CharacterBody2D22" parent="." instance=ExtResource("22_1jcgp")]
-y_sort_enabled = true
 position = Vector2(2347, 2331)
 
 [node name="CharacterBody2D23" parent="." instance=ExtResource("22_1jcgp")]
-y_sort_enabled = true
 position = Vector2(2147, 2331)
 
 [node name="CharacterBody2D7" parent="." instance=ExtResource("23_44tnc")]
@@ -744,15 +705,12 @@ position = Vector2(2846, 1849)
 position = Vector2(2225, 1303)
 
 [node name="CharacterBody2D10" parent="." instance=ExtResource("26_85h5x")]
-y_sort_enabled = true
 position = Vector2(2896, 2327)
 
 [node name="CharacterBody2D25" parent="." instance=ExtResource("26_85h5x")]
-y_sort_enabled = true
 position = Vector2(4216, 2872)
 
 [node name="CharacterBody2D51" parent="." instance=ExtResource("26_85h5x")]
-y_sort_enabled = true
 position = Vector2(1382, 1264)
 
 [node name="Switch_Arrow_Green_Antitrigo" parent="." instance=ExtResource("19_ap3dj")]
@@ -788,7 +746,6 @@ position = Vector2(1506, 1617)
 position = Vector2(3780, 1873)
 
 [node name="CharacterBody2D9" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(3480, 1975)
 
 [node name="CharacterBody2D153" parent="." instance=ExtResource("29_48gm0")]
@@ -798,7 +755,6 @@ position = Vector2(3480, 2165)
 position = Vector2(3480, 1875)
 
 [node name="CharacterBody2D155" parent="." instance=ExtResource("19_2olg4")]
-y_sort_enabled = true
 position = Vector2(3177, 1972)
 
 [node name="CharacterBody2D156" parent="." instance=ExtResource("29_48gm0")]
@@ -820,7 +776,7 @@ position = Vector2(3929, 1551)
 position = Vector2(4014, 1160)
 
 [node name="CharacterBody2D57" parent="." instance=ExtResource("31_58404")]
-position = Vector2(1742, 1328)
+position = Vector2(1735, 1299)
 
 [node name="CharacterBody2D110" parent="." instance=ExtResource("31_58404")]
 position = Vector2(1633, 2170)
@@ -829,7 +785,7 @@ position = Vector2(1633, 2170)
 position = Vector2(1131, 1295)
 
 [node name="CharacterBody2D59" parent="." instance=ExtResource("32_133at")]
-position = Vector2(1504, 1360)
+position = Vector2(1497, 1331)
 
 [node name="CharacterBody2D56" parent="." instance=ExtResource("32_133at")]
 position = Vector2(1921, 1326)
