@@ -1101,7 +1101,7 @@ position = Vector2(6405, 666)
 
 [node name="Player" parent="." instance=ExtResource("12_2kx3e")]
 z_index = 1
-position = Vector2(5857, 465)
+position = Vector2(630, 2315)
 
 [node name="Arrow_Green_Right" parent="." instance=ExtResource("13_xw61g")]
 position = Vector2(513, 1418)
