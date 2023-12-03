@@ -28,7 +28,7 @@ func _ready():
 	
 	
 # Whenerver a button is pressed, do:
-func _on_texture_button_pressed(button: TextureButton):
+func _on_texture_button_pressed(button: TextureButton):	
 	if button != Retour:
 		current_button = button # assign clicked button to current_button
 	
