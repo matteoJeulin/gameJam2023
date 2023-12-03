@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=3 uid="uid://d2nryl15vitfb"]
+
+[ext_resource type="Script" path="res://Niveau4.gd" id="1_kth77"]
+
+[node name="Niveau4" type="Node2D"]
+script = ExtResource("1_kth77")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 1917.0
+offset_bottom = 1081.0
+theme_override_colors/font_color = Color(0.972549, 0.501961, 0.352941, 1)
+theme_override_font_sizes/font_size = 100
+text = "To be continued..."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Main_Menu" type="Button" parent="."]
+custom_minimum_size = Vector2(960, 100)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 460.0
+offset_top = 624.0
+offset_right = 1420.0
+offset_bottom = 835.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "Main Menu"
+
+[connection signal="pressed" from="Main_Menu" to="." method="_on_main_menu_pressed"]

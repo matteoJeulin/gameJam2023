@@ -3,10 +3,9 @@
 [ext_resource type="Texture2D" uid="uid://bd487bts5j3p3" path="res://assets/sprites/walls/end_bookshelf_left.png" id="1_p04n6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vpily"]
-size = Vector2(10, 41)
+size = Vector2(10, 42.5)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
-y_sort_enabled = true
 scale = Vector2(4, 4)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -14,6 +13,5 @@ position = Vector2(16, 0)
 texture = ExtResource("1_p04n6")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-y_sort_enabled = true
-position = Vector2(-4, 15.5)
+position = Vector2(-4, 15.25)
 shape = SubResource("RectangleShape2D_vpily")
