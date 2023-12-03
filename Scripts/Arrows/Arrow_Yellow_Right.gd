@@ -1,6 +1,6 @@
 extends Area2D
  
-var accel = 4000
+var accel = 6000
 const Types = preload("res://Scripts/Test_types.gd")
 var type = Types.yellow.new()
 var direction = 1

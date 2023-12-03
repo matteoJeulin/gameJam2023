@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cmfav4den28v3" path="res://assets/sprites/arrows/arrow_right_red_1.png" id="2_idqyu"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ty3yc"]
-radius = 25.0
+radius = 40.0
 
 [node name="Arrow_Red_Right" type="Area2D"]
 script = ExtResource("1_h8v6b")
